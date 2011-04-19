@@ -2,7 +2,7 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('phonecatApp', []).
+angular.module('phonecatApp', ['phonecatApp.filters']).
   config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/phones',
       {template: 'partials/phone-list.html',   controller: PhoneListCtrl});
